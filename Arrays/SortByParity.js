@@ -4,14 +4,15 @@
  * @param {number[]} nums
  * @return {number[]}
  */
- var sortArrayByParity = function(nums) {
-    let NewArray = [];
-    
-    nums.forEach(num => {
-        if(num % 2){
-         NewArray.push(num)
-        } else {
-         NewArray.unshift(num)}
-    })
-    return NewArray;
+var sortArrayByParity = function (nums) {
+  let NewArray = [];
+
+  nums.forEach((num) => {
+    if (num % 2) {
+      NewArray.push(num);
+    } else {
+      NewArray.unshift(num);
+    }
+  });
+  return NewArray;
 };
